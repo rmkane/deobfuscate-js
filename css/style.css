@@ -1,7 +1,65 @@
+body {
+  background: #222;
+  color: #EEE;
+}
+
+textarea {
+  background: #000;
+  color: #FFF;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.5em auto;
+  text-align: center;
+}
+
 #ace-editor {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  border: thin solid #666;
+  height: 60vh;
+  width: 100%;
+}
+
+.input-data {
+  height: calc(40vh - 8em);
+}
+
+.input-data textarea {
+  display: inline-block;
+  resize: none;
+  height: calc(100% - 0.5em);
+}
+
+.input-code {
+  width: 70%;
+}
+
+.input-map {
+  width: calc(30% - 1.25em);
+}
+
+.ui-controls {
+  height: 3em;
+  line-height: 3em;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.ui-controls button {
+  display: inline-block;
+  padding: 0.25em;
+  background: #444;
+  color: #DDD;
+  border: 2px outset #111;
+}
+
+.ui-controls button:hover {
+  background: #555;
+  color: #FFF;
+}
+
+.ui-controls button:active {
+  background: #222;
+  color: #888;
 }
